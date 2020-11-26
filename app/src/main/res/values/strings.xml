@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ComputerDictionary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_text_add_english_format">Enter the word english format</string>
+    <string name="edit_text_add_persian_format">Enter the word persian format</string>
+</resources>

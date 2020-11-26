@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragment.SearchFragment">
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/blue_73"
+        android:text="Search the word"
+        android:textSize="18sp"
+        android:id="@+id/text_view_search_the_word"
+
+        />
+<LinearLayout
+    android:layout_below="@+id/text_view_search_the_word"
+    android:id="@+id/linear_layout_search_word"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:orientation="horizontal">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_search_word"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+         android:hint="Enter the word"
+        android:layout_weight="1"
+        android:textColor="@color/black_00" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_search_word"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/img_search_foreground" />
+</LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_word"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="340dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/linear_layout_search_word"
+        android:text="Add word"
+        android:textColor="@color/black_00"
+        android:backgroundTint="@color/orange_92"
+        android:textSize="20sp" />
+
+
+
+
+</RelativeLayout>
