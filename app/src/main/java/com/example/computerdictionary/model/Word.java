@@ -13,6 +13,11 @@ public class Word {
         mPersianFormat = persianFormat;
         mUUID=UUID.randomUUID();
     }
+    public Word(UUID uuid,String englishFormat, String persianFormat) {
+        mEnglishFormat = englishFormat;
+        mPersianFormat = persianFormat;
+        mUUID=uuid;
+    }
 
     public String getEnglishFormat() {
         return mEnglishFormat;
