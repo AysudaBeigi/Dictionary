@@ -7,33 +7,31 @@ import androidx.fragment.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 
 import com.example.computerdictionary.R;
 import com.example.computerdictionary.controller.fragment.SearchFragment;
 import com.example.computerdictionary.controller.fragment.WordFragment;
+import com.example.computerdictionary.model.Word;
 
-public class WordActivity extends AppCompatActivity {
-    public static Intent newIntent(Context context){
+import java.util.UUID;
+
+
+public class WordActivity extends   SingleFragmentActivity {
+
+    public static final String EXTRA_WORD = "com.example.computerdictionary.extraWord";
+
+    public static Intent newIntent(Context context , Word word){
         Intent intent=new Intent(context,WordActivity.class);
+        intent.putExtra(EXTRA_WORD, word);
         return intent;
     }
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_word);
-
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment fragment = fragmentManager.findFragmentById(R.id.word_fragment_container);
-
-        if (fragment == null) {
-            fragmentManager.
-                    beginTransaction().
-                    add(R.id.word_fragment_container, WordFragment.newInstance()).
-                    commit();
-        }
-
+    public Fragment createFragment() {
+        Word word= (Word) getIntent().getSerializableExtra(EXTRA_WORD);
+        return WordFragment.newInstance(word);
 
     }
 }

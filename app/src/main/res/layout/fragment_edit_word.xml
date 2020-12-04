@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".controller.fragment.AddWordFragment">
+    tools:context=".controller.fragment.EditWordFragment">
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_text_add_english_format"
+        android:id="@+id/edit_text_edit_english_format"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="100dp"
         android:layout_marginRight="50dp"
@@ -24,17 +23,18 @@
         android:textSize="14sp" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/edit_text_add_persian_format"
+        android:id="@+id/edit_text_edit_persian_format"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:layout_below="@+id/edit_text_add_english_format"
+        android:layout_below="@+id/edit_text_edit_english_format"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="50dp"
         android:backgroundTint="@color/blue_73"
         android:fontFamily="sans-serif-condensed-light"
         android:hint="@string/edit_text_add_persian_format"
+
         android:inputType="text"
         android:textColor="@color/black_00"
         android:textColorHint="#293030"

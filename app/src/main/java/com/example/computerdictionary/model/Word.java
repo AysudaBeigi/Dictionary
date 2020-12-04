@@ -1,8 +1,9 @@
 package com.example.computerdictionary.model;
 
+import java.io.Serializable;
 import java.util.UUID;
 
-public class Word {
+public class Word implements Serializable {
 
     private String mEnglishFormat;
     private String mPersianFormat;

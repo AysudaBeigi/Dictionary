@@ -4,4 +4,10 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="edit_text_add_english_format">Enter the word english format</string>
     <string name="edit_text_add_persian_format">Enter the word persian format</string>
+    <string name="snack_bar_word_not_found">Word not found !!!</string>
+    <string name="word_report">the english format of word is : %1$s and the
+    persian format of it is : %2$s </string>
+    <string name="english_format">%s</string>
+    <string name="persian_format">%s</string>
+    <string name="send_word">share word</string>
 </resources>

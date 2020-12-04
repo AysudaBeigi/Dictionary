@@ -61,8 +61,7 @@ public class WordDBRepository {
         }
         return words;
 
-        /*  return mWords;
-         */
+
     }
 
     public Word getWord(String EOrPFormat) {
@@ -167,9 +166,7 @@ public class WordDBRepository {
         String[] whereArgs = new String[]{
                 persianFormat
         };
-
         WordCursorWrapper wordCursorWrapper = queryWordCursor(whereClause, whereArgs);
-
         if (wordCursorWrapper == null || wordCursorWrapper.getCount() == 0)
             return null;
         try {

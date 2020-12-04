@@ -37,45 +37,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_word_persian_format"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:orientation="vertical">
-
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_share_word"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:backgroundTint="@color/green_74"
             android:text="Share"
             android:textColor="@color/black_00"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_edit_word"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_gravity="center_vertical"
             android:backgroundTint="@color/yellow_33"
             android:text="Edit"
             android:textColor="@color/black_00"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_delete_word"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_vertical"
             android:backgroundTint="@color/red_46"
             android:text="Delete"
             android:textColor="@color/black_00"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
 
